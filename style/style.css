@@ -1,0 +1,266 @@
+main {
+}
+
+main .motivation, main .motivation div {
+  align-items: flex-start;
+}
+
+main .intro {
+    min-height: 100vh;
+}
+
+main .intro {
+  gap: 8rem;
+}
+
+main .intro, footer {
+    padding: 0 3.2rem;
+}
+
+main .intro .fly {
+    min-height: 25vh;
+}
+
+main .intro .box .txt {
+    margin: 1.6rem 0 3.2rem;
+}
+
+main .intro .box  {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h2 {
+    font-size: var(--headersize);
+    color: var(--headercolor);
+    font-weight: 900;
+}
+
+main .intro #buttondown {
+    margin: 0 0 3.2rem;
+}
+
+/*_______________________________________________________*/
+
+main .motivation {
+background: var(--purple-background);
+min-height: 100vh;
+}
+
+main .motivation #boxes {
+background: var(--white-background);
+
+margin: 3vw;
+padding: 2.4rem;
+
+border-radius: 2.4rem;
+}
+
+main .motivation #boxes:nth-child(2) {
+margin: 0 3vw;
+}
+
+main .motivation .txt {
+    margin-top: 3.2rem;
+}
+
+main .motivation .txt h2 {
+    margin-bottom: 2.4rem;
+}
+
+/*__________________________________________________________________*/
+
+.contact {
+  padding: 8rem 4rem;
+}
+
+#my-form, .fieldset-wrapper, .name, .input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#my-form {
+    position: relative;
+
+    gap: 3.2rem;
+
+    background: var(--white-background);
+  }
+
+  #my-form h2 {
+    text-align: center;
+    margin: 4rem 0;
+  }
+  
+  .input-wrapper input,
+  .input-wrapper textarea,
+  span:hover {
+    color: var(--textcolor);
+  
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .fieldset-wrapper {
+    gap: 2.4rem;
+  }
+  
+  .name {
+    justify-content: space-between;
+  }
+  
+  .name .input-wrapper {
+    flex: 1;
+  }
+  
+  .input-wrapper input,
+  .input-wrapper textarea {
+    min-height: 5.6rem;
+
+    background: var(--white-background);
+    padding: 0 3.2rem;
+
+    outline: 1.5px solid hsla(244, 38%, 28%, 1);
+    border-radius: 1.6rem;
+
+    font-size: 1.6rem;
+    line-height: 2.6rem;
+
+    font-family: var(--fontstyle);
+  }
+
+  .input-wrapper input[type="text"] {
+    background-image: url(../img/profile.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+    border-left: 1.4rem solid transparent;
+  }
+
+  .input-wrapper input[type="email"] {
+    background-image: url(../img/at.svg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    
+    border-left: 1.4rem solid transparent;
+  }
+  
+  .input-wrapper textarea {
+    min-height: 16.8rem;
+    padding: 1.6rem 2.4rem;
+  }
+
+  input:hover,
+  textarea:hover {
+    outline: 0.2rem solid black;
+
+    transition: all 0.2s ease-in-out;
+  }
+  
+  input:invalid:hover,
+  textarea:invalid:hover,
+  input:invalid:focus,
+  textarea:invalid:focus {
+    outline: 0.2rem solid red;
+
+    transition: all 0.2s ease-in-out;
+  }
+  
+  input:valid:focus,
+  textarea:valid:focus {
+    outline: 0.2rem solid green;
+  }
+  
+  input:valid:hover,
+  textarea:valid:hover {
+    outline: 0.2rem solid hsla(244, 38%, 28%, 1);
+
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #my-form input[type="submit"] {
+    background: var(--purple-background);
+
+    border-radius: 1.6rem;
+    outline: none;
+    outline: none;
+
+    min-height: 5.6rem;
+
+    color: var(--white-background);
+    font-size: 1.6rem;
+    font-weight: bold;
+
+    transition: all 0.2s ease-in-out;
+  }
+  
+  #my-form input[type="submit"]:hover {
+    background: var(--headercolor);
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+  }
+
+  #my-form p {
+    margin: 1.6rem;
+    font-size: var(--smallsize);
+    text-align: center;
+  }
+
+/*__________________________________________________________________*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--purple-background);
+    text-align: center;
+    color: var(--white-background);
+    min-height: 10vh;
+}
+
+/*__________________________________________________________________*/
+
+@media (min-width: 1000px) {
+
+  main .intro {
+    flex-direction:row-reverse;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  main .motivation, main .motivation div {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+  }
+
+  main .intro .box {
+    justify-content: flex-end;
+    height: 90vh;
+    gap: 12.5rem;
+  }
+
+  main .intro .fly {
+    min-height: 70vh;
+}
+
+main .motivation #boxes {
+  height: 80vh;
+  width: 80vw;
+}
+
+main .motivation, main .motivation div {
+  justify-content: center;
+}
+
+main .motivation #boxes, main .motivation #boxes .txt {
+  flex-direction: column;
+}
+}
+
+/*__________________________________________________________________*/
+
+@media (min-width: 1400px) {
+
+}

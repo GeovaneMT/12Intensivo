@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --white-background: hsla(283, 47%, 97%, 1);
+    --hover-background: linear-gradient(96.21deg, #3c39a8 0%, #211e44 99.68%);--purple-background: linear-gradient(96.21deg, #343193 0%, #302C63 99.68%);
+    --pink-background: linear-gradient(96.21deg, hsla(320, 69%, 42%, 1) 0%, hsla(244, 38%, 28%, 1) 99.68%);
+    
+    
+    --headercolor: hsla(320, 69%, 42%, 1);
+    --textcolor: hsla(244, 38%, 28%, 1);
+
+    --headersize: clamp(2rem, 3.2rem, 4rem);
+    --textsize: clamp(1.6rem, 2rem, 2.4rem);
+    --smallsize: clamp(0.8rem, 1.28rem, 1.6rem);
+
+    --fontstyle: 'Mulish', sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 1.2rem;
+    height: 1.2rem;
+    background: var(--pink-background);
+    border: 5px solid var(--white-background);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--purple-background);
+    border-radius: 10rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-background);
+}
+
+/* Specify the desired color for the placeholder text */
+::placeholder {
+    color: var(--textcolor);
+  }
+  
+  /* For WebKit browsers (e.g., Chrome, Safari) */
+  input:-webkit-input-placeholder {
+    color: var(--textcolor);
+  }
+  
+  /* For Mozilla Firefox */
+  input::-moz-placeholder {
+    color: var(--textcolor);
+  }
+  
+  /* For Microsoft Edge */
+  input::-ms-input-placeholder {
+    color: var(--textcolor);
+  }
+  
+  /* For Opera */
+  input::-o-input-placeholder {
+    color: var(--textcolor);
+  }
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--white-background);
+    font-size: var(--textsize);
+    font-family: var(--fontstyle);
+    color: var(--textcolor);
+}
+
+main .intro, main .motivation, main .motivation div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .motivation, main .motivation div {
+    justify-content: space-between
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="root/root.css">
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;900&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="img/purpleGlobe.svg">
+    <title>Explore sem limites</title>
+</head>
+<body>
+    <nav>
+
+    </nav>
+    <header>
+
+    </header>
+    <main>
+        <div class="intro">
+          <img class="fly" src="img/intro.svg" alt="Cartoon de um astronauta olhando para a tela">
+          <div class="box">
+          <div class="txt">
+            <h2>Explore sem limites</h2>
+            <p>Porque o aprendizado é contínuo</p>
+        </div>
+        <div id="buttondown">
+          <img src="img/down.svg" alt="">
+          </div>
+        </div>
+        
+        </div>
+        <div class="motivation" id="motivation">
+            <div id="boxes">
+                <img src="img/yellowGlobe.svg" alt="Planeta amarelo">
+                <div class="txt">
+                    
+                    <h2>Não pare nunca</h2>
+
+                    <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+                </div>
+            </div>
+            <div id="boxes">
+                <img src="img/purpleGlobe.svg" alt="Planeta roxo">
+                <div class="txt">
+
+                    <h2>Só volta</h2>
+
+                    <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+                </div>
+            </div>
+            <div id="boxes">
+                <img src="img/pinkGlobe.svg" alt="Planeta rosa">
+                <div class="txt">
+
+                    <h2>Siga seu ritmo</h2>
+
+                    <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+                </div>
+            </div>
+        </div>
+        <div class="contact">
+            
+          <form id="my-form" action="send-email.php" method="post">
+            <h2>Entre em contato</h2>
+        
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="name">
+                        <div class="input-wrapper">
+                            <label for="event-name"></label>
+                            <input 
+                                type="text" 
+                                id="event-name"
+                                required 
+                                minlength="3"
+                                placeholder="Primeiro Nome"
+                                name="first_name"
+                            />
+                        </div>
+                    </div>
+        
+                    <div class="input-wrapper">
+                        <label for="event-lastname"></label>
+                        <input 
+                            type="text" 
+                            id="event-lastname"
+                            required 
+                            minlength="3"
+                            placeholder="Sobrenome"
+                            name="last_name"
+                        />
+                    </div>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="input-wrapper">
+                        <label for="email"></label>
+                        <input required type="email" id="email" placeholder="E-mail" name="email" />
+                    </div>
+                </div>
+            </fieldset>
+        
+            <fieldset>
+                <div class="fieldset-wrapper">
+                    <div class="input-wrapper">
+                        <label for="Feedback"></label>
+                        <textarea 
+                            name="message"
+                            minlength="3"
+                            required 
+                            id="Feedback"
+                            placeholder="Digite sua mensagem aqui"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+        
+            <div class="input-wrapper">
+                <input 
+                    type="submit"
+                    value="Enviar mensagem"
+                    class="button" 
+                    form="my-form"
+                />
+                <label></label>
+                <p><span>campos com erros ficarão vermelhos ao passar o mouse</span></p>
+            </div>
+        </form>
+          
+        </div>
+    </main>
+    <footer>
+        <p>© 2023 - Rocketseat Explorer</p>
+    </footer>
+    <script src="root/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+Figma model: https://www.figma.com/file/563kgHMxsEy17nCdTJI6JC/Explore-sem-limites/duplicate
